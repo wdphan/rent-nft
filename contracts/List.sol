@@ -46,6 +46,10 @@ contract List is ERC721URIStorage, Ownable {
     //////// LIST TOKEN  ////////
     /////////////////////////////
 
+    function getListPrice() public view returns (uint256) {
+        return listPrice;
+    }
+
     function getListedTokenForId(uint256 tokenId)
         public
         view
